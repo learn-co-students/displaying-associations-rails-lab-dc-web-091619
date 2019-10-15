@@ -1,0 +1,39 @@
+<h1>Artists</h1>
+<ul>
+  <% @artists.each do |artist| %>
+
+      <li>
+        <%= link_to artist.name, artist_path(artist) %>
+        (<%= artist.song_count %> <%= "song".pluralize(artist.song_count) %>)
+        <%# artist.songs.each do |song| %>
+        <%#= link_to song.title, song_path(song) %>
+      </li>
+        <%# end %>
+<%end %>
+
+</ul>
+
+<!--<h1>Detail Page <%#= @retailer.name %>-->
+<!--  <h2><%#= @retailer.name%> </h2>-->
+
+<%# iterate thru this retailers snacks   %>
+<!--  <ul>-->
+    <%#= @retailer.snacks.each do |snack| %>
+<!--      <li> <%#= link_to snack.name, snack_path(snack) %> </li>-->
+<%#  link text snack.name ^^  ^^ snack's show page(pass in that snack)          %>
+<!--      </ul>-->
+    <%# end %>
+
+    <%#= link_to "Edit this retailer", edit_retailer_path(@retailer)%>
+    <%#= link_to 'Home Page', home_path%>
+    <%#= link_to "Retailers Index", retailers_path %>
+<!--<h1>Songs</h1>-->
+<!--<ul>-->
+  <%# @artist.song.each do |song| %>
+<!--    <li> <%#= link_to song.name, song_path(song)%>-->
+      <%#= song.artist_name %>
+      <%#= song.title %>
+<!--      </a>-->
+<!--    </li>-->
+  <%#end %>
+<!--</ul>>-->
