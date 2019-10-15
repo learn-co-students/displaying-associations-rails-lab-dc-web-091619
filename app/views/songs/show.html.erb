@@ -1,0 +1,10 @@
+<h1> Song </h1>
+
+<p> <%= @song.title %> </p>
+
+<h1> Song artists </h1>
+
+<ul>
+    <li> <%= link_to @song.artist.name, artist_path(@artist) %> </li>
+
+</ul>
